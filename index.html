@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EverCare Clinic</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <h1 class="logo">EverCare Clinic</h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="#appointment">Book Visit</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <div>
+            <p class="eyebrow">Compassionate Care, Close to Home</p>
+            <h2>Your Family Health Partner</h2>
+            <p>
+              Primary care, pediatric checkups, and preventive screenings with
+              same-week appointments.
+            </p>
+            <a class="btn" href="#appointment">Schedule an Appointment</a>
+          </div>
+          <div class="hero-card">
+            <h3>Clinic Hours</h3>
+            <ul>
+              <li>Mon – Fri: 8:00 AM – 6:00 PM</li>
+              <li>Saturday: 9:00 AM – 2:00 PM</li>
+              <li>Sunday: Closed</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section container">
+        <h3>Our Services</h3>
+        <div class="grid cards">
+          <article class="card">
+            <h4>Primary Care</h4>
+            <p>Routine checkups, diagnosis, and long-term care plans.</p>
+          </article>
+          <article class="card">
+            <h4>Pediatrics</h4>
+            <p>Well-child visits, immunizations, and growth monitoring.</p>
+          </article>
+          <article class="card">
+            <h4>Women's Health</h4>
+            <p>Preventive care, screenings, and personalized consultations.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="doctors" class="section alt">
+        <div class="container">
+          <h3>Meet Our Doctors</h3>
+          <div class="grid cards">
+            <article class="card">
+              <h4>Dr. Maya Patel</h4>
+              <p>Family Medicine • 12 years experience</p>
+            </article>
+            <article class="card">
+              <h4>Dr. Jordan Kim</h4>
+              <p>Pediatrics • 9 years experience</p>
+            </article>
+            <article class="card">
+              <h4>Dr. Leah Morgan</h4>
+              <p>Internal Medicine • 15 years experience</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="appointment" class="section container">
+        <h3>Book an Appointment</h3>
+        <form id="appointmentForm" class="appointment-form" novalidate>
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="field">
+            <label for="date">Preferred Date</label>
+            <input id="date" name="date" type="date" required />
+          </div>
+          <div class="field">
+            <label for="service">Service</label>
+            <select id="service" name="service" required>
+              <option value="">Choose a service</option>
+              <option>Primary Care</option>
+              <option>Pediatrics</option>
+              <option>Women's Health</option>
+            </select>
+          </div>
+          <button type="submit" class="btn">Submit Request</button>
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-wrap">
+        <p>📍 125 Wellness Avenue, Brookfield</p>
+        <p>📞 (555) 019-2024</p>
+        <p>✉️ hello@evercareclinic.com</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

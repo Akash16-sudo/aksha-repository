@@ -1,0 +1,192 @@
+:root {
+  --primary: #1f7a8c;
+  --primary-dark: #145868;
+  --surface: #f7fbfc;
+  --text: #243746;
+  --muted: #5b7283;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: #fff;
+  line-height: 1.5;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+  border-bottom: 1px solid #e7eef1;
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.logo {
+  margin: 0;
+  color: var(--primary);
+  font-size: 1.4rem;
+}
+
+.nav-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.hero {
+  background: linear-gradient(120deg, #edf8fb, #ffffff 50%);
+  padding: 4rem 0;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.eyebrow {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  border: 0;
+  background: var(--primary);
+  color: #fff;
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.55rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: var(--primary-dark);
+}
+
+.hero-card {
+  background: #fff;
+  border: 1px solid #d9e7eb;
+  border-radius: 0.8rem;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 8px 30px rgba(31, 122, 140, 0.1);
+}
+
+.section {
+  padding: 3.5rem 0;
+}
+
+.alt {
+  background: var(--surface);
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.cards {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #dde8ec;
+  border-radius: 0.8rem;
+  padding: 1rem;
+}
+
+.appointment-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: 760px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+input,
+select {
+  padding: 0.65rem 0.7rem;
+  border: 1px solid #c8d8df;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.form-message {
+  margin: 0;
+  color: var(--primary-dark);
+  font-weight: 700;
+  grid-column: 1 / -1;
+}
+
+.site-footer {
+  border-top: 1px solid #e2eaee;
+  padding: 1.5rem 0;
+  background: #fafcfd;
+}
+
+.footer-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+@media (max-width: 800px) {
+  .hero-content,
+  .cards,
+  .appointment-form {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-wrap {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
